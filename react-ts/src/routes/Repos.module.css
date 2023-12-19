@@ -1,0 +1,45 @@
+.repos_conteiner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: max-content;
+  width: 100%;
+}
+
+.repos {
+  display: flex;
+  flex-direction: column;
+  background-color: #2b3566;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+  width: 25rem;
+  height: 20rem;
+}
+
+P {
+  margin: 1rem 1rem;
+}
+
+.name {
+  text-transform: uppercase;
+  text-wrap: wrap;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.description {
+  text-align: center;
+  text-wrap: wrap;
+}
+
+.repos a {
+  text-align: center;
+  background-color: #644aff;
+  padding: 1rem;
+  border-radius: 5px;
+  opacity: .8;
+  transition: .3s;
+  margin: 1rem 1rem;
+}

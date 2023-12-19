@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div className={classes.app}>
-      <h1>Ronaldo Cerenza</h1>
+      <h1>GitHub Finder</h1>
       <Outlet />
     </div>
   )

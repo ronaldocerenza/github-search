@@ -6,6 +6,7 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import Home from './routes/Home.tsx'
+import { Repos } from './routes/Repos.tsx'
 
 
 // Criação de rotas, com o react-router-dom, para o componente App, atraves do createBrowserRouter
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
         path: '/',
         element: <Home />
       },
+      {
+        path: '/repos/:login',
+        element: < Repos/>
+      }
     ]
   }
 ])
