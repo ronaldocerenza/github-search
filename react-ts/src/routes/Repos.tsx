@@ -18,8 +18,12 @@ export const Repos = () => {
       {repos.map((repo: RepoProps) => (
         <div className={classes.repos} key={repo.id}>
           <p className={classes.name}>{repo.name}</p>
-          <p className={classes.description}>{repo.description}</p>
-          <p>{repo.language}</p>
+          <div className={classes.description}>
+            {!repo.description && (<p>Descrição não Informada</p>)}
+            {repo.description && (<p>{repo.description}</p>)}
+            {repo.language && (<p>{repo.language}</p>)}
+            {!repo.language && (<p>Linguagem não Informada</p>)}
+          </div>
           <a href={ repo.html_url }>Veja no Git</a>
         </div>
       ))}

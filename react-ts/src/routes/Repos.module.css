@@ -32,6 +32,7 @@ P {
 .description {
   text-align: center;
   text-wrap: wrap;
+  height: 15rem;
 }
 
 .repos a {
