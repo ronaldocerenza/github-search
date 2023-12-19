@@ -1,14 +1,16 @@
 import { useEffect, useState } from "react"
 import classes from './Repos.module.css'
 import { RepoProps } from "../types/repos"
+import { useParams } from "react-router-dom"
 
 export const Repos = () => {
   const [repos, setRepos] = useState([])
+  const { login } = useParams()
   
   useEffect(() => {
-    fetch('https://api.github.com/users/ronaldocerenza/repos')
+    fetch(`https://api.github.com/users/${login}/repos`)
     .then(response => response.json())
-    .then(data => setRepos(data))
+    .then(data => setRepos(data))   
   }
   , [])
 
