@@ -12,7 +12,7 @@ export const Repos = () => {
     .then(response => response.json())
     .then(data => setRepos(data))   
   }
-  , [])
+  , [login])
 
 
   return (
